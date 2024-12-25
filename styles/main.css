@@ -1,0 +1,160 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+@font-face {
+    font-family: 'Soyuz Grotesk';
+    src: url("../fonts/soyuz-grotesk/soyuz-grotesk.otf") format('opentype');
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0 40px;
+}
+
+.header-elements {
+    margin-top: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu{
+    display: none;
+}
+
+.header-menu.active{
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+}
+
+.header-menu_link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.header-text {
+    gap: 33px;
+    display: flex;
+}
+
+.header-logo {
+    width: 108px;
+    height: 34px;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    
+}
+
+.header-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-socials {
+    gap: 50px;
+    display: flex;
+}
+
+.header-burger{
+    display: none;
+}
+
+.footer-mobile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-mobile{
+    display: none;
+}
+
+.footer-mobile p {
+    font-size: 12px;
+    line-height: 17px;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 100;
+}
+
+a[href]:not([href=""]) {
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    body {
+        padding: 0 10px;
+    }
+    .header{
+        margin-bottom: 70px;
+    }
+
+    .header-text{
+        display: none;
+    }
+
+    .header-burger{
+        display: block;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .footer-socials{
+        display: none;
+    }
+
+    .footer{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .footer-mobile{
+        display: flex;
+    }
+
+    .footer-mobile_right{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+}
